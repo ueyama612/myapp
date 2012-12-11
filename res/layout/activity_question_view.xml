@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.google.android.maps.MapView
+                android:id="@+id/map_view1"
+                android:layout_width="match_parent"
+                android:layout_height="320dip"
+                android:apiKey="0wJT40MH3iAlzi3MynQ6BB3a_i8nsddOS11BQcA"
+                android:clickable="true"
+                android:enabled="true" >
+            </com.google.android.maps.MapView>
+            
+			<RelativeLayout
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" >
+
+	            <TextView
+	                android:id="@+id/textView1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_marginTop="15dp"
+	                android:text="場所："
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+	           <TextView
+	               android:id="@+id/name"
+	               android:layout_width="wrap_content"
+	               android:layout_height="match_parent"
+	               android:layout_alignBaseline="@+id/textView1"
+	               android:layout_alignBottom="@+id/textView1"
+	               android:layout_toRightOf="@+id/textView1"
+	               android:textAppearance="?android:attr/textAppearanceLarge" />
+
+           </RelativeLayout>
+           
+			<RelativeLayout
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" >
+
+	            <TextView
+	                android:id="@+id/textView2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:text="コメント："
+	                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	            <TextView
+	                android:id="@+id/content"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentTop="true"
+	                android:layout_toRightOf="@+id/textView2"
+	                android:paddingBottom="30px" />
+
+            </RelativeLayout>
+
+			<RelativeLayout
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" >
+
+			    <TextView
+			        android:id="@+id/textView4"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="人数："
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+			    <Button
+			        android:id="@+id/delete"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_alignParentTop="true"
+			        android:text="質問を削除" />
+
+			    <TextView
+			        android:id="@+id/point"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentTop="true"
+			        android:layout_marginLeft="15dp"
+			        android:layout_toRightOf="@+id/textView4"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+			</RelativeLayout>
+
+		    <TextView
+		        android:id="@+id/yose"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="20px"
+		        android:text="寄せられた回答一覧"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		    
+		    <ListView
+		        android:id="@+id/answerlistview"
+		        android:layout_width="fill_parent"
+		        android:layout_height="200dp"
+		        android:scrollbars="vertical" >
+		    </ListView>
+		    
+		    <TextView
+                android:id="@+id/aaa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+	</ScrollView>
+</LinearLayout>

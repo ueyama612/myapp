@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">ロコキク！</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">メニュー</string>
+    <string name="title_activity_main">ログイン</string>
+    <string name="title_activity_mode">ロコキク！</string>
+    <string name="title_activity_ask_top">質問モード</string>
+    <string name="title_activity_tell_top">回答モード</string>
+    <string name="title_activity_ask_form">質問フォーム</string>
+    <string name="title_activity_json">JsonActivity</string>
+    <string name="title_activity_web">WebActivity</string>
+    <string name="title_activity_search_map">地点検索</string>
+    <string name="title_activity_question_view">あなたの質問詳細</string>
+    <string name="title_activity_question_view_for_teller">回答可能な質問詳細</string>
+    <string name="title_activity_status">あなたのステータス</string>
+    <string name="title_activity_config">設定</string>
+    <string name="title_activity_answer_info">寄せられた回答</string>
+    <string name="title_activity_evaluate">回答を評価</string>
+    <string name="title_activity_answer_form">回答フォーム</string>
+    <string name="title_activity_search_map_for_answer">地点検索</string>
+    <string name="title_activity_hoge">HogeActivity</string>
+
+</resources>
